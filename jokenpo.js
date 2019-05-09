@@ -24,4 +24,7 @@ function jogar() {
 function resetar() {
   document.getElementById("pc").src = "pc.png";
   document.getElementById("placar").innerHTML = "";
+
+  // remover//
+  alert("escolha uma opção para Jogar :)");
 }
