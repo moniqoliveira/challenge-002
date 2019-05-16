@@ -18,13 +18,24 @@ function jogar() {
         document.getElementById("pc").src = "images/papel_pc.png";
         break;
     }
+    if (
+    (document.getElementById("pedra").checked == true && game == 0) || 
+    (document.getElementById("tesoura").checked == true && game == 1) ||
+    (docuement.getElementById("papel").checked == true && game == 2)
+    ){
+      document.getElementById("placar").innerHTML= "Empate";
+
+    } else if (
+      (document.getElementById("pedra").checked == true && game == 2) ||
+      (document.getElementById("tesoura").checked == true && game == 0) ||
+      (document.getElementById("papel".checked == true && game == 1)){
+        document.getElementById("placar").innerHTML="Você Ganhou :)"; 
+      }
+    }
   }
-}
 
 function resetar() {
   document.getElementById("pc").src = "pc.png";
   document.getElementById("placar").innerHTML = "";
 
-  // remover//
-  alert("escolha uma opção para Jogar :)");
 }
