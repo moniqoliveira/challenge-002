@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jokenpô</title>
+    <script src="jokenpo.js"></script>
 </head>
 <body>
     <h1>Jo-ken-pô</h1>
+    <div>Jogador
+         <p id="placar-jogador"></p>
+    </div>
+
+    <div>Maquina
+        <p id="placar-maquina"></p>
+    </div>
+
     <h3>Jogador</h3>
     <img src="images/papel_jogador.png" alt="papel">
     <img src="images/tesoura_jogador.png" alt="tesoura">
@@ -17,8 +26,8 @@
         <input type="radio" name="choices" id="tesoura"> Tesoura
         <input type="radio" name="choices" id="pedra"> Pedra
         <p>
-            <input type="button" value="JOGAR" onclick="jogar()">
-            <input type="reset" value="RESET" onclick="resetar()">  
+            <input type="button" value="JOGAR" onclick="play()">
+            <input type="reset" value="RESET" onclick="reseta()">
         </p>
     </form>
     <hr>
@@ -26,7 +35,6 @@
     <img src="images/pc.png" alt="PC" id="pc">
     <hr>
     <h3 id="placar">
-    <script src="jokenpo.js"></script>
     </h3>
 </body>
 </html>
